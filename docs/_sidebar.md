@@ -1,0 +1,6 @@
+- [Character Options](character-options/)
+  - [Character Creation](character-options/character-creation.md)
+  - [Species](character-options/species/)
+    - [Automaton](character-options/species/automaton.md)
+    - [Awakened](character-options/species/awakened.md)
+    - [Crystalline](character-options/species/crystalline.md)
