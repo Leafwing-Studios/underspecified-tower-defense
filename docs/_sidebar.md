@@ -1,4 +1,4 @@
-- [Introduction](README.md)
+- [Introduction](/)
 - [Features](features/)
   - [Headings and Sections](features/headings.md)
   - [Markdown](features/markdown.md)
