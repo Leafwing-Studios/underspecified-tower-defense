@@ -73,7 +73,7 @@ html.transition *:after {
 	bottom: 9px;
 }
 
-.markdown-section strong {
+.markdown-section strong, .markdown-section em {
 	color: var(--highlight_color);
 }
 
