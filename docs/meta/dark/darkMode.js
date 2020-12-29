@@ -36,7 +36,7 @@ const plugin = (hook, vm) => {
 			textColor: '#c4c4b8',
 			highlightColor: '#d3d3c6',
 			divider: '#454555',
-			backgroundAlt: '#161F26',
+			backgroundAlt: '#1e2a33',
     },
     light: {
       background: 'none',

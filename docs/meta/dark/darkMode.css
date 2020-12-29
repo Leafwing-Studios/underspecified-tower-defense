@@ -73,8 +73,19 @@ html.transition *:after {
 	bottom: 9px;
 }
 
-.markdown-section strong, .markdown-section em {
+.markdown-section strong, 
+.markdown-section em {
 	color: var(--highlight_color);
+}
+
+.markdown-section code,
+.markdown-section pre,
+.markdown-section pre > code {
+  background-color: var(--alternate_background);
+}
+
+.markdown-section pre > code {
+  color: var(--text_color);
 }
 
 .sidebar li:not(.active)>a
