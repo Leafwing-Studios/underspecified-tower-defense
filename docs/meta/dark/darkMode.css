@@ -73,11 +73,31 @@ html.transition *:after {
 	bottom: 9px;
 }
 
+/* heading color stuff */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section h5,
+.markdown-section h6 {
+  color: var(--highlight_color);
+}
+
+.sidebar h1 {
+  color: var(--highlight_color);
+}
+
+.anchor span {
+  color: var(--highlight_color);
+}
+
+/* bold and italics */
 .markdown-section strong, 
 .markdown-section em {
 	color: var(--highlight_color);
 }
 
+/* code */
 .markdown-section code,
 .markdown-section pre,
 .markdown-section pre > code {
@@ -88,6 +108,7 @@ html.transition *:after {
   color: var(--text_color);
 }
 
+/* here there be dragons */
 .sidebar li:not(.active)>a
 {
   color: var(--text_color) !important;
@@ -97,9 +118,6 @@ input, input::placeholder {
 	color: var(--text_color);
 }
 
-.anchor span {
-	color: var(--text_color);
-}
 
 .search {
 	border-bottom-color: var(--divider_color) !important;

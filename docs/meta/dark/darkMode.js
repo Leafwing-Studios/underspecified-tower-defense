@@ -31,20 +31,26 @@ const plugin = (hook, vm) => {
   var theme = { dark: {}, light: {} }
   var defaultConfig = {
     dark: {
-      background: '#0F151A',
-      toggleBtnBg: '#34495e',
-			textColor: '#c4c4b8',
-			highlightColor: '#d3d3c6',
-			divider: '#454555',
-			backgroundAlt: '#1e2a33',
+      background: '#002b36',
+      toggleBtnBg: '#586e75', // same as divider
+			textColor: '#eee8d5', // primary content (lightened)
+      highlightColor: '#fdf6e3', // emphasized content (lightened)
+      // textColor: '#839496', // primary content (true)
+      // highlightColor: '#93a1a1', // emphasized content (true)
+			divider: '#586e75', // comment/seconday content
+      backgroundAlt: '#073642', // background highlights
     },
     light: {
-      background: 'none',
-      toggleBtnBg: 'var(--theme-color)',
-      textColor: '#34495e',
-			highlightColor: '#2c3e50',
-			divider: '#eee',
-			backgroundAlt: '#f8f8f8',
+      background: '#fdf6e3',
+      toggleBtnBg: '#93a1a1',
+      textColor: '#073642', // primary content (total dark)
+			highlightColor: '#002b36', // emphasized content (total dark)
+      // textColor: '#405d66', // primary content (darkened)
+			// highlightColor: '#073642', // emphasized content (darkened)
+      // textColor: '#657b83', // primary content (true)
+			// highlightColor: '#586e75', // emphasized content (true)
+			divider: '#93a1a1',
+			backgroundAlt: '#eee8d5',
     }
   }
 
