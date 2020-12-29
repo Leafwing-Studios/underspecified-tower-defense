@@ -1,7 +1,3 @@
-:root {
-  --docsify_dark_mode_bg: white;
-  --docsify_dark_mode_btn: var(--theme-color);
-}
 html,
 body,
 main,
@@ -9,7 +5,7 @@ input,
 .sidebar,
 aside {
   background: var(--docsify_dark_mode_bg);
-	color: var(--text_color);
+	color: var(--primary_content);
 }
 
 #dark_mode > input[type='checkbox'] {
@@ -22,7 +18,7 @@ aside {
   text-indent: -9999px;
   width: 38px;
   height: 23px;
-  background: var(--docsify_dark_mode_btn);
+  background: var(--ui_highlight);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -48,7 +44,7 @@ aside {
 }
 
 #dark_mode > input:checked + label {
-  background: var(--docsify_dark_mode_btn);
+  background: var(--ui_highlight);
 }
 
 #dark_mode > input:checked + label:after {
@@ -80,66 +76,66 @@ html.transition *:after {
 .markdown-section h4,
 .markdown-section h5,
 .markdown-section h6 {
-  color: var(--highlight_color);
+  color: var(--emphasized_content);
 }
 
 .sidebar h1 {
-  color: var(--highlight_color);
+  color: var(--emphasized_content);
 }
 
 .anchor span {
-  color: var(--highlight_color);
+  color: var(--emphasized_content);
 }
 
 /* bold and italics */
 .markdown-section strong, 
 .markdown-section em {
-	color: var(--highlight_color);
+	color: var(--emphasized_content);
 }
 
 /* code */
 .markdown-section code,
 .markdown-section pre,
 .markdown-section pre > code {
-  background-color: var(--alternate_background);
+  background-color: var(--background_highlight);
 }
 
 .markdown-section pre > code {
-  color: var(--text_color);
+  color: var(--primary_content);
 }
 
 /* here there be dragons */
 .sidebar li:not(.active)>a
 {
-  color: var(--text_color) !important;
+  color: var(--primary_content) !important;
 }
 
 input, input::placeholder {
-	color: var(--text_color);
+	color: var(--primary_content);
 }
 
 
 .search {
-	border-bottom-color: var(--divider_color) !important;
+	border-bottom-color: var(--ui_highlight) !important;
 }
 .matching-post {
-	border-bottom-color: var(--divider_color) !important;
+	border-bottom-color: var(--ui_highlight) !important;
 }
 
 .docsify-pagination-container {
-	border-top-color: var(--divider_color) !important;
+	border-top-color: var(--ui_highlight) !important;
 }
 
 .sidebar {
-	border-right-color: var(--divider_color) !important;
+	border-right-color: var(--ui_highlight) !important;
 }
 
 .markdown-section td, .markdown-section th {
-	border-color: var(--divider_color);
+	border-color: var(--ui_highlight);
 }
 
 .markdown-section tr:nth-of-type(2n) {
-	background-color: var(--alternate_background);
+	background-color: var(--background_highlight);
 }
 
 .sidebar-toggle {
