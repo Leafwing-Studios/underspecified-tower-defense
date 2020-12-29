@@ -6,49 +6,49 @@ const plugin = (hook, vm) => {
     }, 210)
   }
 	
-  var setColor = ({ background, toggleBtnBg, textColor, highlightColor, divider, backgroundAlt }) => {
+  var setColor = ({ background, backgroundHighlight, uiHighlight, primaryContent, emphasizedContent, themeColor }) => {
 		var splitBackground = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(background)
 		var splitBackground = splitBackground || ['', 'ff', 'ff', 'ff']
 		
-    document.documentElement.style.setProperty(
-      '--docsify_dark_mode_bg',
-      background
-    )
-    document.documentElement.style.setProperty(
-      '--docsify_dark_mode_btn',
-      toggleBtnBg
-    )
-    document.documentElement.style.setProperty('--text_color', textColor)
-		document.documentElement.style.setProperty('--highlight_color', highlightColor)
-		document.documentElement.style.setProperty('--divider_color', divider)
-		document.documentElement.style.setProperty('--alternate_background', backgroundAlt)
+    document.documentElement.style.setProperty('--docsify_dark_mode_bg', background)
+    document.documentElement.style.setProperty('--ui_highlight', uiHighlight)
+    document.documentElement.style.setProperty('--primary_content', primaryContent)
+		document.documentElement.style.setProperty('--emphasized_content', emphasizedContent)
+    document.documentElement.style.setProperty('--background_highlight', backgroundHighlight)
+    document.documentElement.style.setProperty('--theme-color', themeColor)
 		document.documentElement.style.setProperty(
 			'--docsify_dark_mode_bg_rgb', 
 			`${parseInt(splitBackground[1], 16)}, ${parseInt(splitBackground[2], 16)}, ${parseInt(splitBackground[3], 16)}`
 		)
   }
 
-  var theme = { dark: {}, light: {} }
   var defaultConfig = {
     dark: {
-      background: '#0F151A',
-      toggleBtnBg: '#34495e',
-			textColor: '#c4c4b8',
-			highlightColor: '#d3d3c6',
-			divider: '#454555',
-			backgroundAlt: '#1e2a33',
+      background: '#002b36',
+      backgroundHighlight: '#073642',
+			uiHighlight: '#586e75',
+			primaryContent: '#eee8d5',
+      emphasizedContent: '#fdf6e3',
+      themeColor: '#2aa198',
     },
     light: {
-      background: 'none',
-      toggleBtnBg: 'var(--theme-color)',
-      textColor: '#34495e',
-			highlightColor: '#2c3e50',
-			divider: '#eee',
-			backgroundAlt: '#f8f8f8',
+      background: '#fdf6e3',
+			backgroundHighlight: '#eee8d5',
+			uiHighlight: '#93a1a1',
+      primaryContent: '#073642',
+      emphasizedContent: '#002b36',
+      themeColor: '#2aa198',
     }
   }
 
-  theme = { ...defaultConfig, ...vm.config.darkMode }
+  const theme = {
+    dark:{
+      ...defaultConfig.dark, ...vm.config.darkMode.dark
+    },
+    light: {
+      ...defaultConfig.light, ...vm.config.darkMode.light
+    }
+  }
 	
 	hook.mounted(function () {
 		var checked = ''
