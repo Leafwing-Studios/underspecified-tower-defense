@@ -1,5 +1,3 @@
 - [Introduction](/)
-- [Features](features/)
-  - [Headings and Sections](features/headings.md)
-  - [Markdown](features/markdown.md)
-  - [Other Features](features/other.md)
+- [Planning](planning/)
+  - [Genre Analysis](planning/genre-analysis.md)
