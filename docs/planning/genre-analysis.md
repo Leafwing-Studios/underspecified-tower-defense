@@ -10,6 +10,8 @@
 - (units)
 
 ## Gameplay
+- tower placement
+- tower selling
 - (mazing)
 - (waves)
   - speed up
@@ -41,6 +43,7 @@
   - feasible to procedurally generate
 - very mobile friendly
 - easy to play in small bursts
+- approximately zero execution skill required
 - massive complexity budget
   - easily gated
   - long play times to draw out learning curve
@@ -63,6 +66,9 @@
   - no dynamic variation
 - poorly optimized performance
 - awkward multiplayer integration
+- level design is often irrelevant
+- choke points of death are often optimal
+- mazing vs. walling balance is iffy
 
 ## Audience Overlap
 - factory builders
