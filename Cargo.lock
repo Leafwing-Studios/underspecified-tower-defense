@@ -245,6 +245,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0d5f2f58f0aec3c50a20799792c3705e80dd7df327e79791cacec197e84e5e61"
 
 [[package]]
+name = "bevy-tick-timers"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "635b201e4374c243dfaf0160dfeca198a946fa088ad96e998766724ede3ad39d"
+dependencies = [
+ "bevy",
+]
+
+[[package]]
 name = "bevy_app"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -646,6 +655,38 @@ dependencies = [
  "bevy_utils",
  "glyph_brush_layout",
  "thiserror",
+]
+
+[[package]]
+name = "bevy_tilemap"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dee85decfc458bffa33aa3eb5c368e7fc3e804cbe12bee9a89d1abbcea6c7f26"
+dependencies = [
+ "bevy_app",
+ "bevy_asset",
+ "bevy_core",
+ "bevy_ecs",
+ "bevy_log",
+ "bevy_math",
+ "bevy_reflect",
+ "bevy_render",
+ "bevy_sprite",
+ "bevy_tilemap_types",
+ "bevy_transform",
+ "bevy_utils",
+ "bitflags",
+ "hexasphere",
+]
+
+[[package]]
+name = "bevy_tilemap_types"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f259a258f9f8ad49570d78730305f85bc29239ed1de83c9be9a390ddb4cce45c"
+dependencies = [
+ "bevy_math",
+ "bevy_render",
 ]
 
 [[package]]
@@ -3447,6 +3488,8 @@ name = "underspecified-tower-defense"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "bevy-tick-timers",
+ "bevy_tilemap",
 ]
 
 [[package]]
