@@ -2,3 +2,4 @@
 - [Planning](planning/)
   - [Genre Analysis](planning/genre-analysis.md)
   - [Game Ideas](planning/game-ideas.md)
+- [Architecture](architecture/)
