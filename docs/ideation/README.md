@@ -22,3 +22,4 @@
 - release a complete, commercially viable product
 - develop and showcase best practices in Bevy
 - target the $10-30 game market on PC and (eventually) consoles
+- runs well on low-end hardware, supporting more casual players and older consoles
