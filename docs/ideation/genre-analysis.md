@@ -47,7 +47,7 @@
 - massive complexity budget
   - easily gated
   - long play times to draw out learning curve
-  - low requirement for comprehensibility: just watch and see what it does
+  - low consequences for comprehensibility failures
 
 ## Issues
 - feast-or-famine gameplay 
@@ -56,7 +56,7 @@
 - limited opportunity for player interactions
   - mitigated by making the contraption more interesting to watch
 - randomly dying
-  - poor communication of upcoming events 
+  - poor communication of upcoming events
   - presence of hard counters, leading to extremely high variance in effectiveness (flying waves)
   - forces learning by repeating static levels
 - limited skill expression
